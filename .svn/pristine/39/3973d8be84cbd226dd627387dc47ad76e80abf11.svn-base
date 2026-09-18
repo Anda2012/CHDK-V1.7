@@ -1,0 +1,53 @@
+************************************
+G1 X Mark II notes
+************************************
+CHDK is a hack, use at your own risk!
+
+General camera and CHDK port information
+****************************************
+
+Port discussion thread https://chdk.setepontos.com/index.php?topic=14228.0
+
+** General
+- To start in shooting mode or wifi connect, hold down the corresponding button
+- G1 X MkII uses propset 6.
+
+** Buttons
+- Default alt button is SHORTCUT. DISPLAY, VIDEO and WIFI may also be used
+- The MF button is identified as ERASE in scripting and CHDK shortcuts
+- Mobile Device Connection button is identified as WIFI
+- "AF frame selector / filtering image display" button is identified as FRAMING ASSIST
+
+Tests & Issues
+**************
+
+** Tested
+- hooktest.lua
+- Tv, Av
+- ISO override
+- isobase.lua
+- CHDK raw / DNG (tested only in P and auto mode, camera already supports RAW in various modes by default, may be broken in some special modes)
+- setmode.lua (100ms works)
+- motion.lua
+- Edge, Zebra, Grid, Histogram, Battery, File overlays
+- ND, SD override
+- PTP live view & remote shoot
+- PTP remote shoot with JPEG, CHDK DNG (Canon RAW didn't work)
+- Multipartition boot with FAT16 + exFAT
+- Extra long exposures, tested 180s
+
+** Not Tested
+- EVF
+- USB remote
+- HDMI
+
+** Not Implemented
+- video controls (movie_rec task) / movie features are not supported
+
+** Known issues
+
+Thanks
+******
+- To all the people who made all the hard work to support digic 6
+- In addition, to the people who were involved in the ports for SX700, SX710, G5X, and G7X which this port is based on
+- To reyalp for reviewing and helping finalize the port
