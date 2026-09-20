@@ -29,14 +29,21 @@ You need the `arm-none-eabi-gcc` toolchain installed (typically `xPack arm-none-
 ```bash
 # Ubuntu / Debian prerequisites
 sudo apt-get update
-sudo apt-get install build-essential git gcc-arm-none-eabi zip```
+wget https://developer.arm.com/-/media/Files/downloads/gnu/11.3.rel1/binrel/arm-gnu-toolchain-11.3.rel1-x86_64-arm-none-eabi.tar.xz
+sudo tar -xf arm-gnu-toolchain-11.3.rel1-x86_64-arm-none-eabi.tar.xz -C /usr/share/
+sudo mv /usr/share/arm-gnu-toolchain-11.3.rel1-x86_64-arm-none-eabi /usr/share/gcc-arm-none-eabi-11.3
+sudo ln -sf /usr/share/gcc-arm-none-eabi-11.3/bin/arm-none-eabi-gcc /usr/bin/arm-none-eabi-gcc
+sudo ln -sf /usr/share/gcc-arm-none-eabi-11.3/bin/arm-none-eabi-g++ /usr/bin/arm-none-eabi-g++
+sudo ln -sf /usr/share/gcc-arm-none-eabi-11.3/bin/arm-none-eabi-gdb /usr/bin/arm-none-eabi-gdb
+sudo ln -sf /usr/share/gcc-arm-none-eabi-11.3/bin/arm-none-eabi-size /usr/bin/arm-none-eabi-size
+arm-none-eabi-gcc --version
 ```
 
 Build Steps
 Clone the repository:
 
 ```bash
-git clone [https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git](https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git) chdk
+git clone https://github.com/Anda2012/CHDK-V1.7.git chdk
 cd chdk
 ```
 
