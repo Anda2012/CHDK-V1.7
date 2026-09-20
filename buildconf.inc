@@ -31,7 +31,7 @@ OPT_PTP=1
 #OPT_VIEWPORT_DEBUG=1
 
 # needs proper fi2.inc in platform/ !!! see http://chdk.setepontos.com/index.php/topic,2995.0.html
-#OPT_FI2=1
+OPT_FI2=1
 
 # if enabled, compiler will produce a lot of warnings, maybe not always correct ones, see http://chdk.setepontos.com/index.php/topic,2509.msg32191.html#msg32191
 #OPT_WARNINGS=1
