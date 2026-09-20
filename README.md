@@ -50,7 +50,7 @@ cd chdk
 Compile for your target platform:
 
 ```bash
-make -j$(nproc) PLATFORM=s95 PLATFORMSUB=100h zip
+make -j$(nproc) PLATFORM=s95 PLATFORMSUB=100h
 ```
 
 Output Files:
